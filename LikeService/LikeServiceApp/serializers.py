@@ -8,8 +8,3 @@ class LikeSerializer(serializers.HyperlinkedModelSerializer):
         model = Like
         fields = ('id', 'postID', 'userID')
 
-# from .models import Hero
-# class HeroSerializer(serializers.HyperlinkedModelSerializer):
-#     class Meta:
-#         model = Hero
-#         fields = ('id', 'name', 'alias')
