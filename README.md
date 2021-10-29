@@ -1,28 +1,25 @@
 # Micro-Blog
 Simple blog based on microservices architecture and realized on python django-rest-framework
 
-## Requirements:
-requirements.txt
-
-## Example:
-
-For startup LikeService:
-
-Change directory
+For starting service in <b>Docker</b> you should make folowing steps:
+1. <b>Change directory</b> to the root directory of the service:
 ```
-cd LikeService
+cd LikeService/
 ```
 
-Run server
-```
-python manage.py runserver <ip_addres:port>
-```
+2. <b>Build</b> docker image from <b>Dockerfile</b>
+  ```
+  docker build -t <like|post|comment>-service .
+  ```
+  
+3. <b>Run container</b> from image
+  ```
+  docker run -p <port>:8000 <like|post|comment>-service
+  ```
+  
+Then go to your browser, open ```0.0.0.0:<port>```
 
-Then go to your browser, open ```<ip_addres:port>```
-
-So you can create/read/update/delete likes
-
-Simple extrapolates on CommentService and PostService
+So you can create/read/update/delete likes|comments|posts
 
 https://www.djangoproject.com/
 
