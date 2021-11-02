@@ -10,8 +10,14 @@ class CommentViewSet(viewsets.ModelViewSet):
 
 
 class CommentList(generics.ListCreateAPIView):
-    queryset = Comment.objects.all()
     serializer_class = CommentSerializer
+
+    def get_queryset(self):
+        queryset = Comment.objects.all()
+        postID = self.request.query_params.get('postID')
+        if postID is not None:
+            queryset = queryset.filter(postID=postID)
+        return queryset
 
 
 class CommentDetail(generics.RetrieveUpdateDestroyAPIView):
