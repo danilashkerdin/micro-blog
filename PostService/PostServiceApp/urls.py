@@ -11,4 +11,5 @@ router.register(r'posts', views.PostViewSet)
 urlpatterns = [
     path('posts/', views.PostList.as_view()),
     path('posts/<int:pk>/', views.PostDetail.as_view()),
+    # path('posts/<int:pk>/comments', views.PostDetail.as_view()),
 ]
