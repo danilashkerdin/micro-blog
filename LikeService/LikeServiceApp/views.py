@@ -10,8 +10,14 @@ class LikeViewSet(viewsets.ModelViewSet):
 
 
 class LikeList(generics.ListCreateAPIView):
-    queryset = Like.objects.all()
     serializer_class = LikeSerializer
+
+    def get_queryset(self):
+        queryset = Like.objects.all()
+        postID = self.request.query_params.get('postID')
+        if postID is not None:
+            queryset = queryset.filter(postID=postID)
+        return queryset
 
 
 class LikeDetail(generics.RetrieveUpdateDestroyAPIView):
