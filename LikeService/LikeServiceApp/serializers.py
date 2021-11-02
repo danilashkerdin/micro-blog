@@ -7,3 +7,4 @@ class LikeSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Like
         fields = ('id', 'postID', 'userID', 'name')
+
