@@ -9,12 +9,12 @@ cd LikeService/
 
 2. <b>Build</b> docker image from <b>Dockerfile</b>
   ```
-  docker build -t <like|post|comment>-service .
+  docker build -t [like|post|comment]-service .
   ```
   
 3. <b>Run container</b> from image
   ```
-  docker run -p <port>:8000 <like|post|comment>-service
+  docker run -p <port>:8000 [like|post|comment]-service
   ```
   
 Then go to your browser, open ```0.0.0.0:<port>```
