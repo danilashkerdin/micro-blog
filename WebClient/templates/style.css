@@ -1,0 +1,118 @@
+body{
+	margin: 0 auto;
+}
+
+.qwe{
+	background:white   ;
+	width:100%;
+}
+
+.page{
+	background: linear-gradient(45deg, #000000, #4d4646);
+	width:800px;
+	min-height:700px;
+	margin: 0 auto;
+}
+.heading{
+	background:#ff0505 !important;
+	width:800px;
+	height:50px;
+	padding-left:170px;
+	position: sticky;
+    top: 0;
+}
+.WebChat{
+	color:white;
+	size:40px;
+	text-align:center;
+	font-style: italic;
+}
+.zeroTr{
+	height:5px;
+	text-align:center;
+}
+.zero{
+	width:600px;
+	text-align:center;
+}
+.Colon{
+	width:100px;
+	text-align:center;
+	color:#C3073F 
+}
+.nav{
+	width:100px;
+	text-align:center;
+	text-decoration:none; 
+}
+.glav{
+	color:white;
+	font-style:italic;
+	padding-top:10px;
+}
+.message{
+	position:absolute;
+	padding-top:10px;
+	padding-left:50px;
+	background:black !important;
+	width:800px;
+	height:80px;
+	position: sticky;
+    bottom:0;
+	color:white;
+}
+.text{
+	float:left;
+}
+
+.textarea{
+	width:600px;
+	height:50px;
+	padding-left:20px;
+	
+}
+
+.fake{
+	color:white;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.btn{
+	width:100px;
+	float: left;
+}
+.btnHelper{
+	padding-top:15px;
+	padding-left:10px;
+}
+.btnGood{
+	height:30px;
+	width:100px;
+	background:white;
+	color:black;
+}
+
+.textName{
+	color:#ff0505;
+	font-size:20px;
+}
+.textPost{
+	color:white;
+	font-size:16px;
+}
+
+.imgCom{
+	height:20px;
+	width:30px;
+}
+.chatGo{
+	font-size:10px;
+	color:#ff0505;
+	text-decoration:none;
+}
+.textFunct{
+	opacity: 0.9;
+	font-style: italic;
+}

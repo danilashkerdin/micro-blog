@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link rel="stylesheet" type="text/css" href="base.css" />
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/blog/">
+    <link href="blog.css" rel="stylesheet">
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <meta charset="UTF-8">
+
+
+    <style>
+        html {
+            min-height:800px;
+            border: 4px double black;
+            width: 1200px;
+            margin: 0 auto;
+        }
+        body {
+            min-height:800px;
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            border: 1px double #800080;
+            width: 1195px;
+            height:150px;
+            background:#FF00FF;
+            font-style: italic
+        }
+        .row {
+            margin: 0 auto;
+           width: 1195px;
+        }
+        .col1 {
+            padding-left: 150px;
+             width: 395px;
+            float:left;
+        }
+        .col2{
+        margin: 0 auto;
+            width: 395px;
+            float:right;
+        }
+        .col2{
+        margin: 0 auto;
+        }
+    </style>
+<header class="header" align="center">
+    <h1 style = "padding-top: 50px;"><b>Наш блог</b></h1>
+</header>
+</head>
+<body>
+    {% block body %}
+
+    {% endblock%}
+
+<br><hr>
+<div class="row">
+
+          <div class="col1">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a  class="text-muted" href="#">Cool stuff</a></li>
+              <li><a class="text-muted" href="#">Random feature</a></li>
+              <li><a class="text-muted" href="#">Team feature</a></li>
+              <li><a class="text-muted" href="#">Stuff for developers</a></li>
+              <li><a class="text-muted" href="#">Another one</a></li>
+              <li><a class="text-muted" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col2">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Resource</a></li>
+              <li><a class="text-muted" href="#">Resource name</a></li>
+              <li><a class="text-muted" href="#">Another resource</a></li>
+              <li><a class="text-muted" href="#">Final resource</a></li>
+            </ul>
+          </div>
+
+          <div class="col3">
+            <img class="mb-2" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="48" height="48">
+            <small class="d-block mb-3 text-muted">© 2021-2022</small>
+          </div>
+</div>>
+
+
+</body>
+</html>

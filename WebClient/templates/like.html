@@ -1,0 +1,24 @@
+{% extends "baseNew.html"%}
+ {% block chat %}
+                    <h3 style="font-style: italic;">Лайки поставили:</h3>
+                    {% for el in data3 %}
+					<tr class=tableChat>
+							<font class=textName>{{el.name}}  </font>
+							<br>
+					</tr>
+                    {% endfor %}
+                    <br>
+			<form  METHOD="post">
+                            <input type="hidden" name="index" value="1">
+						    {% if like %}
+                                <input name= "text3" type="submit" class="btnLike" value="Убрать лайк">
+                            {% else %}
+                                <input name= "text3" type="submit" class="btnLike" value="Поставить лайк">
+                            {% endif %}
+            </form>
+
+
+
+ {% endblock %}
+
+

@@ -1,0 +1,37 @@
+{% extends "baseNew.html"%}
+ {% block chat %}
+                    <h3 style="font-style: italic;">Редактирование коментария:</h3>
+                    {% for el in data %}
+					<tr class=tableChat>
+							<font class=textName>{{el.name}}  </font>
+							<font class=textPost>{{el.text}}</font>
+							<br>
+                            <div class=textFunct align="right">
+                                {% if el.userID == userId %}
+							            <a class=chatGo href="/com/edit/{{el.id}}" align="right">Редактировать<a>
+                                {% endif %}
+						    </div>
+					</tr>
+                    {% endfor %}
+
+        <div class=messageCom>
+			<form  METHOD="post">
+				<div class=text>
+					<div class=textareaBlock>
+							<div class=textareaBlock2>
+								<textarea placeholder="Введите новое отредактированное сообщение" name = "str" class=textarea></textarea>
+							</div>
+					</div>
+				</div>
+				<div class=btn>
+					<div class=btnHelper>
+                        <input type="hidden" name="index" value="4">
+						<button class=btnGood>Изменить</button>
+					</div>
+				</div>
+				</form>
+        </div>
+
+
+ {% endblock %}
+

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <!-- Bootstrap core CSS -->
+
+    <!-- Custom styles for this template -->
+	<link rel="stylesheet" href="style.css">
+    <link href="pricing.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<title>Web-Chat</title>
+
+	<style>
+	img{
+        opacity: 0.8;
+        filter: alpha(opacity=40);
+      }
+      body{
+	margin: 0 auto;
+}
+
+.qwe{
+	background:white   ;
+	width:100%;
+}
+
+.page{
+	background: linear-gradient(45deg, #000000, #4d4646);
+	width:800px;
+	min-height:750px;
+	margin: 0 auto;
+}
+.heading{
+	background:#ff0505 !important;
+	width:800px;
+	height:50px;
+	padding-left:170px;
+	position: sticky;
+    top: 0;
+}
+.WebChat{
+	color:white;
+	size:40px;
+	text-align:center;
+	font-style: italic;
+}
+.zeroTr{
+	height:5px;
+	text-align:center;
+}
+.zero{
+	width:600px;
+	text-align:center;
+}
+.Colon{
+	width:100px;
+	text-align:center;
+	color:#C3073F
+}
+.nav{
+	width:100px;
+	text-align:center;
+	text-decoration:none;
+}
+.glav{
+	color:white;
+	font-style:italic;
+	padding-top:10px;
+}
+.message{
+	padding-top:10px;
+	background:black !important;
+	width:780px;
+	height:80px;
+	position: sticky;
+    bottom:0;
+	color:white;
+}
+.messageCom{
+    position: sticky;
+    bottom:60px;
+}
+.text{
+	float:left;
+}
+
+.textarea{
+	width:600px;
+	height:50px;
+	padding-left:20px;
+
+}
+
+.fake{
+	color:white;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.btn{
+	width:100px;
+	float: left;
+}
+.btnHelper{
+	padding-top:15px;
+	padding-left:10px;
+}
+.btnGood{
+	height:30px;
+	width:100px;
+	background:white;
+	color:black;
+}
+
+.textName{
+	color:#ff0505;
+	font-size:20px;
+}
+.textPost{
+	color:white;
+	font-size:16px;
+}
+
+.imgCom{
+	height:20px;
+	width:30px;
+}
+.chatGo{
+	font-size:10px;
+	color:#ff0505;
+	text-decoration:none;
+}
+.textFunct{
+	opacity: 0.9;
+	font-style: italic;
+}
+.btnLike{
+    width:760px;
+	height:50px;
+	text-align:center;
+	margin: 0 auto;
+	background:#ff0505 !important;
+	color:white;
+
+}
+	  </style>
+  </head>
+
+  <body>
+	<div class=qwe>
+		<div class=page>
+			<div class=heading>
+				<table class=tableFirst>
+
+
+					<tr>
+						<table>
+							<tr>
+								<td class=zero>
+									<center><h1 class=WebChat>Secret-Web-Chat</h1></center>
+								</td>
+								<td class=Colon>
+									<a class="nav" href="/chat">
+										<font class=glav >Главная</font>
+									</a>
+								</td>
+
+								<td class=Colon>
+
+									<a class="nav" href="#second-tab-content">
+										<font class=glav>Выход</font>
+									</a>
+
+
+
+								</td>
+							</tr>
+						</table>
+					</tr>
+				</table>
+
+			</div>
+			<div class=fake>
+				<table>
+                    {% block chat %}
+                    {% endblock %}
+				</table>
+			</div>
+	</div>
+
+
+
+ </body>
+</html>
